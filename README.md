@@ -1,16 +1,112 @@
 # This section of the Three Mile Island nuclear power facility melted down in 1979.
 
-## Design Goals
+## Objectives
 
-1. Conditional Rendering
-  - The List and ListEntry components need to be used in one of two ways in order to render correctly
-2. Children nesting their own parent
-  - The List and ListEntry components need to nest one another in order to render correctly
-3. A component depth of 4 or more
-  - App --> List --> ListEntry --> List --> ListEntry
-4. External API query
-  - They must use http://jservice.io to retrieve categories and clues
-5. Chained asynchrous calls
-  - We can enforce, via testing, that they use a sequential series of calls to the API to ensure that they understand each step in the async chain and get a little callback practice
-6. Lifecycle methods
-  - CompononentDidMount should be used in App to query the quiz API
+ - Understand how to implement conditional rendering
+ - Apply nested components
+ - Perform external API requests
+ - Use react life-cycle method: ComponentDidMount
+
+## Getting started
+
+In this sprint, you'll be completing an application that may or may not ressemble a popular game show!
+
+ - *Initial setup:* `npm install`
+ 
+ - *Run the app:* In a new terminal tab, start the application with `npm start`
+
+ - *Run the test suite:* `npm start`
+ 
+ - Make sure you `add` and `commit` frequently!
+
+
+**Minimum Requirements:**
+
+ - Make all tests pass
+
+ - Make sure you complete all of the user stories (not everything is covered by the test suite!)
+
+
+## Application Overview
+
+Below is a flow chart that illustrates how the components in this application are connected.
+
+Please note how some components are nested in other components. Your data should also flow in the direction of the arrows,from parent to child.
+
+![component-flow-chart](./images/component-flow-chart.png)
+
+
+## User stories
+
+**As a player, when I start the game, I should be able to see the GAMEBOARD, SCOREBOARD, and RESPONSE so that I can play the game**
+
+Acceptance criteria:
+ 
+- [ ] Displays GAMEBOARD (use testdata.js)
+  - [ ] Includes CATEGORIES (with correct info), each displays CATEGORY
+  - [ ] CATEGORY by default should list CLUES with their $ value
+- [ ] Displays SCOREBOARD
+  - [ ] Should default to $0
+- [ ] RESPONSE
+  - [ ] Should accept a response when a CLUE is clicked
+
+
+![app-component.png](./images/app-component.png)
+
+
+---------------------------------------------------
+
+**As a player, I want to click on a CLUE (e.g. $200) so that I can view the question(CLUE) and try to answer it**
+
+
+Acceptance criteria:
+ 
+- [ ] Replaces GAMEBOARD with CLUE question when ($)CLUE is clicked
+  - [ ] Displays RESPONSE
+  - [ ] Displays SCOREBOARD
+  - [ ] RESPONSE
+    - [ ] Should show a response input
+    - [ ] Should switch back to GAMEBOARD when reponse is submitted
+  - [ ] GAMEBOARD
+    - [ ] After submitting a response: does not show CLUE dollar value when displaying CATEGORIES
+
+![clue](./images/clue.png)
+
+
+---------------------------------------------------
+
+**As a player, I want to get scored on the answer that I submit, so that I know how I am doing**
+
+
+Acceptance criteria:
+ 
+- [ ] RESPONSE
+  - [ ] Should submit response when user hits the enter key
+  - [ ] Should switch back to GAMEBOARD when reponse is submitted
+  - [ ] GAMEBOARD does not show CLUE dollar value when displaying CATEGORIES
+  - [ ] Displays SCOREBOARD
+    - [ ] Updates score after response based on correct / incorrect answer
+
+Entering a reponse:
+
+![clue](./images/clue-response.png)
+
+
+After submitting a reponse:
+
+![clue](./images/response-submit.png)
+
+
+---------------------------------------------------
+
+**As a player, I want my CLUES to be sourced from an external API, so that I always have the newest questions**
+
+
+Acceptance criteria:
+ 
+- [ ] GAMEBOARD
+  - [ ] Displays CATEGORIES and CLUES from (http://jservice.io/)
+  - [ ] Gets CATEGORY ids, and CLUES for each category id
+
+
+---------------------------------------------------

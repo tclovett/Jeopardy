@@ -38,9 +38,18 @@ export default class App extends Component {
   }
   componentDidMount() {
     // axios.get('http://jservice.io/api/clues')
-    //   .then(data => this.setState({results: data.data}))
     //   .catch(err => console.error(err))
-    // axios.get('http://jservice.io/api/categories?')
+    
+    axios.get('http://jservice.io/api/categories?count=5')
+    .then(categories => categories.data.map(category => category.id))
+    .then(ids => ids.map(id => axios.get(`http://jservice.io/api/category?id=${id}`) ))
+    .then(clueRequests => Promise.all(clueRequests))
+    .then(items => items.map(item=> item.data))
+    .then(data => this.setState({results: data}))
+    .then(console.log)
+    .catch(console.error)
+    
+
     //What I'd like to have here is:
     //1. A query to /api/categories to get a set of categories
     //2. A set of queries afterwards to /api/category at each category id to get clues for that category
