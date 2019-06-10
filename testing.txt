@@ -1,0 +1,47 @@
+##App##
+- Should be a stateful component
+- Should render a scoreboard component
+- Should render a gameboard component
+- Should render a response component
+- Should rerender gameboard with question when tile clicked
+
+
+##ScoreBoard##
+- Should be stateless
+- Should render the player's score
+? Should have a title
+
+
+##Response##
+- Should be stateless
+- Should have an input field
+- Should have a submit button -- We don't have a submit button; FYI
+
+
+##Gameboard##
+- Should be stateless
+- Should render GameboardList component
+- Should render question component when list entry is clicked
+
+
+##Gameboard List##
+- Should be stateless
+- Should render GameboardListEntry component
+
+
+##Gameboard List Entry##
+- Should be stateless
+- Should render a point amount
+
+
+##Gameboard Question##
+- Should be stateless
+- Should render a question
+- Should not render a point amount once clicked
+- Should not be clickable once clicked
+
+
+##Gameboard Question/Answer##
+- Should be stateless
+- Should render a question on the gameboard
+- Should render the answer when a response is submitted
