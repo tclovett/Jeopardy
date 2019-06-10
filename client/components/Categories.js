@@ -5,16 +5,7 @@ import Category from './Category';
 const Categories = props => {
   return (
     <div id={'categories'} data-testid="categoryList">
-      {props.categories.map((el, ind) => (
-        <Category
-          key={ind}
-          clues={el.clues}
-          title={el.title}
-          selectQuestion={props.selectQuestion}
-          currentQuestion={props.currentQuestion}
-          answeredQuestions={props.answeredQuestions}
-        />
-      ))}
+      {/* display all the categories */}
     </div>
   );
 };

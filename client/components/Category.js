@@ -5,19 +5,8 @@ import Clue from './Clue'
 const Category = (props) => {
   return(
     <div className={'category'}  data-testid="category">
-      {' '}
-        <div className={'categoryTitle'} data-testid="categoryTitle">
-          {props.title.toUpperCase()} 
-        </div>
-        {props.clues.map(el => (
-          <Clue
-            clueObject={el}
-            key={el.id}
-            selectQuestion={props.selectQuestion}
-            selected={props.currentQuestion.id === el.id ? true : false}
-            answered={props.answeredQuestions.includes(el.id)}
-          />)
-        )}
+      {/* display category */}
+      {/* display clues for each category */}
     </div>
   );
 };
