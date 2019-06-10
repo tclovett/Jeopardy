@@ -15,7 +15,7 @@ In this sprint, you'll be completing an application that may or may not ressembl
  
  - *Run the app:* In a new terminal tab, start the application with `npm start`
 
- - *Run the test suite:* `npm start`
+ - *Run the test suite:* `npm test`
  
  - Make sure you `add` and `commit` frequently!
 
