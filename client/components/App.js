@@ -11,23 +11,11 @@ export default class App extends Component {
   
     this.state = {
       results: categories,
-      userResponse: '',
       currentQuestion: {},
       answeredQuestions: [],
       score: 0
     };
-  
-    this.recordResponse = this.recordResponse.bind(this);
   }
-  recordResponse(newText) {
-    this.setState({ userResponse: newText });
-  }
-  submitResponse(event) {
-    // this function should fire when the user fills the response and hits 'enter'
-      // Is the user response correct? 
-      // yes/no? What should happen?
-  }
-
   componentDidMount() {
     // Getting data from an external API
     //1. A query to /api/categories to get a set of categories
@@ -36,7 +24,6 @@ export default class App extends Component {
   render() {
     return (
       <div id={'app'}>
-        {/* What is 'Reactor 2'? */}
         {/* Gameboard */}
         {/* Scoreboard */}
         {/* Response */}
