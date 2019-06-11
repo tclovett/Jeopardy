@@ -11,11 +11,12 @@ class Response extends Component {
   render(){
     return (
       <div id={'response'} data-testid="response">
+        
         <input
           type='text'
           placeholder='Answers go here!'
-         {/* handle data change */}
-         {/* handle when 'enter' is hit */}
+          // handle data change
+          // handle when 'enter' is hit
           >
         </input>
         </div>
