@@ -1,18 +1,26 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-const Response = (props) => {
-  return (
-    <div id={'response'} data-testid="response">
-      <input
-        type='text'
-        placeholder='Answers go here!'
-       {/* handle data change */}
-       {/* handle when 'enter' is hit */}
-        >
-      </input>
-      </div>
-  )
+class Response extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      userInput: ''
+    }
+  }
+  render(){
+    return (
+      <div id={'response'} data-testid="response">
+        <input
+          type='text'
+          placeholder='Answers go here!'
+         {/* handle data change */}
+         {/* handle when 'enter' is hit */}
+          >
+        </input>
+        </div>
+    )
+  }
 }
 
 Response.propTypes = {
