@@ -25,9 +25,9 @@ export default class Response extends Component {
           placeholder='Answers go here!'
           // handle data change
           // handle when 'enter' is hit
-          >
+        >
         </input>
-        </div>
+      </div>
     )
   }
 }
