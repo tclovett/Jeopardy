@@ -36,7 +36,10 @@ In this sprint, you'll be completing an application that may or may not ressembl
  
  - Add CSS animations to handle the transitions between conditional renderings
  
- - Create a replay feature to implement the most exciting moments of your multiplayer games.
+ - Devise a way for a user to request all the clues from a particular day
+  - Then, add the ability to request clues from categories
+ 
+ - Create a replay feature to capture the most exciting moments of your multiplayer games.
  
  - Use [redux](https://redux.js.org/) to manage application state.
 
