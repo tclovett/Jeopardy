@@ -32,6 +32,8 @@ In this sprint, you'll be completing an application that may or may not ressembl
 
  - Refactor your asyncronous code to use [promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
  
+ - Implement local multiplayer with multiple scoreboards.
+ 
  - Add CSS animations to handle the transitions between conditional renderings 
  
  - Use [redux](https://redux.js.org/) to manage state.
@@ -58,7 +60,7 @@ Acceptance criteria:
 - [ ] Displays SCOREBOARD
   - [ ] Should default to $0
 - [ ] RESPONSE
-  - [ ] Should accept a response when a CLUE is clicked
+  - [ ] Should only accept a response when a CLUE is selected
 
 
 ![app-component.png](./images/app-component.png)
@@ -76,7 +78,7 @@ Acceptance criteria:
   - [ ] Displays SCOREBOARD
   - [ ] RESPONSE
     - [ ] Should show a response input
-    - [ ] Should switch back to GAMEBOARD when reponse is submitted
+    - [ ] Should switch back to full GAMEBOARD when reponse is submitted
   - [ ] GAMEBOARD
     - [ ] After submitting a response: does not show CLUE dollar value when displaying CATEGORIES
 
