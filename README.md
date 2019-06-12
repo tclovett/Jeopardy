@@ -32,6 +32,8 @@ In this sprint, you'll be completing an application that may or may not ressembl
 
  - Refactor your asyncronous code to use [promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
  
+ - Add CSS animations to handle the transitions between conditional renderings 
+ 
  - Use [redux](https://redux.js.org/) to manage state.
 
 
