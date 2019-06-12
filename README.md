@@ -32,11 +32,13 @@ In this sprint, you'll be completing an application that may or may not ressembl
 
  - Refactor your asyncronous code to use [promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
  
- - Implement local multiplayer with multiple scoreboards.
+ - Implement buzz-in local multiplayer with multiple scoreboards.
  
- - Add CSS animations to handle the transitions between conditional renderings 
+ - Add CSS animations to handle the transitions between conditional renderings
  
- - Use [redux](https://redux.js.org/) to manage state.
+ - Create a replay feature to implement the most exciting moments of your multiplayer games.
+ 
+ - Use [redux](https://redux.js.org/) to manage application state.
 
 
 ## Application Overview
