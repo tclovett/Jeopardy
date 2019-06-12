@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
-import axios from 'axios';
-import Response from './Response';
-import Gameboard from './Gameboard';
-import Scoreboard from './Scoreboard';
 import { categories } from '../../testdata';
 
 export default class App extends Component {
   constructor(props) {
     super(props);
-  
+
     this.state = {
       results: categories,
       currentQuestion: {},
