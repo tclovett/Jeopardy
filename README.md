@@ -37,7 +37,8 @@ In this sprint, you'll be completing an application that may or may not ressembl
  - Add CSS animations to handle the transitions between conditional renderings
  
  - Devise a way for a user to request all the clues from a particular day
-  - Then, add the ability to request clues from categories
+ 
+ - Then, add the ability to request clues from categories
  
  - Create a replay feature to capture the most exciting moments of your multiplayer games.
  
