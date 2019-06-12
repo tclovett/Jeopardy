@@ -27,6 +27,12 @@ In this sprint, you'll be completing an application that may or may not ressembl
  - Make sure you complete all of the user stories (not everything is covered by the test suite!)
 
  - Look at the style.css and assign the appropriate classes/id's to the components
+ 
+**Advanced Content:**
+
+ - Refactor your asyncronous code to use [promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+ 
+ - Use [redux](https://redux.js.org/) to manage state.
 
 
 ## Application Overview
