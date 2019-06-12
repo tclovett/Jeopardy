@@ -13,7 +13,7 @@ beforeEach(() => {
   ({ getAllByTestId } = render(
     <Gameboard
       categories={categories}
-      selectQuestion={{}}
+      selectQuestion={() => {}}
       currentQuestion={{}}
       answeredQuestions={[]}
     />
