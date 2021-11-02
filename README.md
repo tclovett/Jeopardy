@@ -1,51 +1,49 @@
-# This section of the Three Mile Island nuclear power facility melted down in 1979.
+# The Answer is React
 
 ## Objectives
 
- - Understand how to implement conditional rendering
- - Apply nested components
- - Perform external API requests
- - Use react life-cycle method: ComponentDidMount
+- Understand how to implement conditional rendering
+- Apply nested components
+- Perform external API requests
+- Use react life-cycle method: ComponentDidMount
 
 ## Getting started
 
 In this sprint, you'll be completing an application that may or may not ressemble a popular game show!
 
- - *Reading:* Read through this readme, take a look at the application overview section to understand how the React components are connected to each other. Carefully read through the User Stories to **understand the features you need to create**, the acceptance criteria is like a checklist where everything should be checked off to ensure you have completed the feature. This exercise also contains a testing suite - when you first open the project up, run the test suite in your terminal and read the failure messages. Those failure messages will help guide you to correctly building the solution. Make sure you write all of the code neccesary to make all of the tests pass and have completed all of the User Stories.
- 
- - *Initial setup:* `npm install`
- 
- - *Run the app:* In a new terminal tab, start the application with `npm start`
+- _Reading:_ Read through this readme, take a look at the application overview section to understand how the React components are connected to each other. Carefully read through the User Stories to **understand the features you need to create**, the acceptance criteria is like a checklist where everything should be checked off to ensure you have completed the feature. This exercise also contains a testing suite - when you first open the project up, run the test suite in your terminal and read the failure messages. Those failure messages will help guide you to correctly building the solution. Make sure you write all of the code neccesary to make all of the tests pass and have completed all of the User Stories.
 
- - *Run the test suite:* `npm test`
- 
- - Make sure you `add` and `commit` frequently!
+- _Initial setup:_ `npm install`
 
+- _Run the app:_ In a new terminal tab, start the application with `npm start`
+
+- _Run the test suite:_ `npm test`
+
+- Make sure you `add` and `commit` frequently!
 
 **Minimum Requirements:**
 
- - Make all tests pass
+- Make all tests pass
 
- - Make sure you complete all of the user stories (not everything is covered by the test suite!)
+- Make sure you complete all of the user stories (not everything is covered by the test suite!)
 
- - Look at the style.css and assign the appropriate classes/id's to the components
- 
+- Look at the style.css and assign the appropriate classes/id's to the components
+
 **Advanced Content:**
 
- - Refactor your asyncronous code to use [promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
- 
- - Implement buzz-in local multiplayer with multiple scoreboards.
- 
- - Add CSS animations to handle the transitions between conditional renderings
- 
- - Devise a way for a user to request all the clues from a particular day
- 
- - Then, add the ability to request clues from categories
- 
- - Create a replay feature to capture the most exciting moments of your multiplayer games.
- 
- - Use [redux](https://redux.js.org/) to manage application state.
+- Refactor your asyncronous code to use [promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
+- Implement buzz-in local multiplayer with multiple scoreboards.
+
+- Add CSS animations to handle the transitions between conditional renderings
+
+- Devise a way for a user to request all the clues from a particular day
+
+- Then, add the ability to request clues from categories
+
+- Create a replay feature to capture the most exciting moments of your multiplayer games.
+
+- Use [redux](https://redux.js.org/) to manage application state.
 
 ## Application Overview
 
@@ -55,13 +53,12 @@ Please note how some components are nested in other components. Your data should
 
 ![component-flow-chart](./images/component-flow-chart.png)
 
-
 ## User stories
 
 **As a player, when I start the game, I should be able to see the GAMEBOARD, SCOREBOARD, and RESPONSE so that I can play the game**
 
 Acceptance criteria:
- 
+
 - [ ] Displays GAMEBOARD (use testdata.js)
   - [ ] Includes CATEGORIES (with correct info), each displays CATEGORY
   - [ ] CATEGORY by default should list CLUES with their $ value
@@ -70,17 +67,14 @@ Acceptance criteria:
 - [ ] RESPONSE
   - [ ] Should only accept a response when a CLUE is selected
 
-
 ![app-component.png](./images/app-component.png)
 
-
----------------------------------------------------
+---
 
 **As a player, I want to click on a CLUE (e.g. $200) so that I can view the question(CLUE) and try to answer it**
 
-
 Acceptance criteria:
- 
+
 - [ ] Replaces GAMEBOARD with CLUE question when ($)CLUE is clicked
   - [ ] Displays RESPONSE
   - [ ] Displays SCOREBOARD
@@ -92,14 +86,12 @@ Acceptance criteria:
 
 ![clue](./images/clue.png)
 
-
----------------------------------------------------
+---
 
 **As a player, I want to get scored on the answer that I submit, so that I know how I am doing**
 
-
 Acceptance criteria:
- 
+
 - [ ] RESPONSE
   - [ ] Should submit response when user hits the enter key
   - [ ] Should switch back to GAMEBOARD when reponse is submitted
@@ -111,22 +103,18 @@ Entering a reponse:
 
 ![clue](./images/clue-response.png)
 
-
 After submitting a reponse:
 
 ![clue](./images/response-submit.png)
 
-
----------------------------------------------------
+---
 
 **As a player, I want my CLUES to be sourced from an external API, so that I always have the newest questions**
 
-
 Acceptance criteria:
- 
+
 - [ ] GAMEBOARD
   - [ ] Displays CATEGORIES and CLUES from (http://jservice.io/)
   - [ ] Gets CATEGORY ids, and CLUES for each category id
 
-
----------------------------------------------------
+---
