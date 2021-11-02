@@ -5,7 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "jest",
-    "start": "webpack -d --watch & live-server --port=3030 --watch=dist --open=dist"
+    "start": "concurrently \"webpack -d --watch\" \"live-server --port=3030 --watch=dist --open=dist\""
   },
   "repository": {
     "type": "git",
@@ -24,12 +24,13 @@
     "@testing-library/react": "^8.0.1",
     "babel-jest": "^24.8.0",
     "babel-loader": "^8.0.6",
+    "concurrently": "^6.3.0",
     "css-loader": "^2.1.1",
-    "nodemon": "^1.19.0",
-    "style-loader": "^0.23.1",
     "jest": "^24.8.0",
     "jest-dom": "^3.4.0",
-    "react-test-renderer": "^16.8.6"
+    "nodemon": "^1.19.0",
+    "react-test-renderer": "^16.8.6",
+    "style-loader": "^0.23.1"
   },
   "dependencies": {
     "axios": "^0.19.0",
