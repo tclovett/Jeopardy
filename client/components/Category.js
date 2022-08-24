@@ -1,20 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
 
-const Category = props => {
+const Category = (props) => {
   return (
-    <div className={'category'} data-testid="category">
-      {/* display category */}
+    <div className="category" data-testid="category">
+      <div className="categoryTitle">{/* display category title */}</div>
       {/* display clues for each category */}
     </div>
   );
-};
-
-Category.propTypes = {
-  title: PropTypes.string,
-  selectQuestion: PropTypes.func,
-  currentQuestion: PropTypes.object,
-  answeredQuestions: PropTypes.array
 };
 
 export default Category;
