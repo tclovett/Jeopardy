@@ -11,21 +11,17 @@
 
 In this sprint, you'll be completing an application that may or may not ressemble a popular game show!
 
-- _Reading:_ Read through this readme, take a look at the application overview section to understand how the React components are connected to each other. Carefully read through the User Stories to **understand the features you need to create**, the acceptance criteria is like a checklist where everything should be checked off to ensure you have completed the feature. This exercise also contains a testing suite - when you first open the project up, run the test suite in your terminal and read the failure messages. Those failure messages will help guide you to correctly building the solution. Make sure you write all of the code neccesary to make all of the tests pass and have completed all of the User Stories.
+- _Reading:_ Read through this readme, take a look at the application overview section to understand how the React components are connected to each other. Carefully read through the User Stories to **understand the features you need to create**, the acceptance criteria is like a checklist where everything should be checked off to ensure you have completed the feature.
 
 - _Initial setup:_ `npm install`
 
 - _Run the app:_ In a new terminal tab, start the application with `npm start`
 
-- _Run the test suite:_ `npm test`
-
 - Make sure you `add` and `commit` frequently!
 
 **Minimum Requirements:**
 
-- Make all tests pass
-
-- Make sure you complete all of the user stories (not everything is covered by the test suite!)
+- Complete all of the user stories
 
 - Look at the style.css and assign the appropriate classes/id's to the components
 

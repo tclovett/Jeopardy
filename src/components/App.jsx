@@ -1,5 +1,5 @@
-import React, { Component, useState } from "react";
-import data from "../../testdata";
+import React, { useState } from "react";
+import data from "../testdata.js";
 
 const App = () => {
   const [categories, setCategories] = useState(data.categories);
