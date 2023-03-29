@@ -11,17 +11,30 @@ const App = () => {
   const [currentQuestion, setCurrentQuestion] = useState({});
   const [answeredQuestions, setAnsweredQuestions] = useState([]);
   const [score, setScore] = useState(0);
+  const [score2, setScore2] = useState(0);
+  const [player, setPlayer] = useState(1);
+
   function selectQuestion(question) {
     setCurrentQuestion(question);
   }
   function checkAnswer(question, answer) {
     if (currentQuestion.answer.includes(answer) || currentQuestion.answer.includes(answer.toLowerCase())) {
       setAnsweredQuestions(answeredQuestions => [...answeredQuestions, currentQuestion.id]);
-      setScore(score + currentQuestion.value)
+      if(player === 1) {
+        setScore(score + currentQuestion.value)
+      } else {
+        setScore2(score2 + currentQuestion.value)
+      }
       setCurrentQuestion({});
     } else {
       alert("Wrong!");
     }
+    if(player === 1){
+      setPlayer(2);
+    } else {
+      setPlayer(1)
+    }
+    
   }
 
   function generate() {
@@ -40,7 +53,7 @@ const App = () => {
   return (
     <div id={"app"}>
       <div id="title">
-        Jeopardy!
+        JEOPARDY
       </div>
       <Button
       generate = {generate}
@@ -54,7 +67,12 @@ const App = () => {
       answeredQuestions = {answeredQuestions}
       />
       <Scoreboard 
+      player = {1}
       score = {score}
+      />
+      <Scoreboard 
+      player = {2}
+      score = {score2}
       />
       {currentQuestion.question ? <Response
       checkAnswer = {checkAnswer}

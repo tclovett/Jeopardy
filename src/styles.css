@@ -10,9 +10,9 @@
 }
 
 :root {
-  background-color:rgb(92, 103, 130);
+  background-color:#56494C;
   --numCategories: 5;
-  --jepColor: #1906e9;
+  --jepColor: #847E89;
 }
 
 body,
@@ -26,7 +26,7 @@ ul {
   font-size: 400%;
   position: absolute;
   margin-left: 40%;
-  color: #ffffff;
+  color: #C2D3CD;
 }
 #app {
   display: grid;
@@ -43,9 +43,9 @@ ul {
   display: grid;
   grid-template-columns: repeat(var(--numCategories), 1fr);
   margin: 20px 0;
-  outline: 5px solid black;
+  outline: 5px solid #212223;
   background-color: var(--jepColor);
-  color: #ffffff;
+  color: #C2D3CD;
 }
 
 .category {
@@ -54,12 +54,13 @@ ul {
   align-items: center;
   text-align: center;
   flex-grow: 1;
+  text-shadow: 1.5px 1.5px #212223
 }
 
 .categoryTitle,
 .clueValue,
 #scoreboard {
-  border: 1px solid black;
+  border: 1px solid #212223;
   display: flex;
   width: 100%;
   height: 100%;
@@ -69,9 +70,9 @@ ul {
 }
 
 .clueValue {
-  color: gold;
+  color: #C2D3CD;
   font-size: 2.5em;
-  text-shadow: 3px 3px black;
+  text-shadow: 3px 3px #212223;
 }
 
 #question {
@@ -82,14 +83,14 @@ ul {
   padding-top: 15vh;
   min-height: 35vh;
   display: grid;
-  outline: 5px solid black;
+  outline: 5px solid #212223;
   background-color: var(--jepColor);
   color: #FFFFFF;
 }
 
 #scoreboard {
   background-color: var(--jepColor);
-  border: 4px solid black;
+  border: 4px solid #212223;
   grid-column: 11;
   align-self: center;
   width: 200px;
@@ -102,23 +103,31 @@ ul {
   grid-row: 2;
   grid-column: 4 / 7;
   justify-self: center;
-  background-color: gold;
   margin-top: 5%;
 }
 
 #generate {
-  background-color: gold;
+  background-color: #847E89;
   margin-left: 10%;
-  margin-top: 79%;
-  height: 20%;
+  margin-top: 80%;
+  height: 30%;
   width: 70%;
-  color: var(--jepColor);
+  color: #C2D3CD;
+  border: 4px solid #212223;
+  text-shadow: 1.5px 1.5px #212223;
+  font-size: larger;
 }
 #answer {
-  background-color: gold;
+  background-color: #847E89;
   margin-left: 10%;
   margin-top: 79%;
   height: 10%;
   width: 70%;
-  color: var(--jepColor);
+  color: #C2D3CD;
+  border: 4px solid #212223;
+  text-shadow: 1.5px 1.5px #212223
+}
+#player {
+  margin-bottom: 200px;
+  position: absolute;
 }
