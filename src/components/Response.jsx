@@ -4,13 +4,18 @@ const Response = (props) => {
   const [userResponse, setUserResponse] = useState("");
 
   const recordResponse = (event) => {
-    // Implement record response
+    
   };
 
   const submitResponse = (event) => {
-    // this function should fire when the user fills the response and hits 'enter'
-    // Is the user response correct?
-    // yes/no? What should happen?
+    if(props.currentQuestion.question) {
+      if (event.keyCode === 13) {
+        setUserResponse(event.target.value);
+        const answer = event.target.value;
+        props.checkAnswer(props.currentQuestion, answer);
+        event.target.value = '';
+      }
+    }
   };
 
   return (
@@ -18,6 +23,7 @@ const Response = (props) => {
       <input
         type="text"
         placeholder="Answers go here!"
+        onKeyDown={submitResponse}
         // handle data change
         // handle when 'enter' is hit
       />
